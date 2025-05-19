@@ -63,10 +63,10 @@ export type SliderModule = {
   acfe_flexible_layout_title?: string;
   headline: string;
   subtitle: string;
-  slides: Slide[];
+  slides: SlideWP[];
 };
 
-export type Slide = {
+export type SlideWP = {
   title: string;
   text: string;
   images: {
@@ -74,3 +74,22 @@ export type Slide = {
   }[];
   imageUrls?: string[];
 };
+
+export interface ImageProps {
+  height: number
+  width: number
+  url: string
+}
+
+export interface Slide {
+  title: string;
+  subtitle: string;
+  image1: ImageProps;
+  image2: ImageProps;
+}
+
+export interface SliderProps {
+  headline: string | undefined;
+  subline: string | undefined;
+  slides: Slide[] | undefined;
+}
