@@ -61,7 +61,7 @@ export async function Slider({ sliderPages }: { sliderPages: SliderProps }) {
 
      
       <div className="absolute top-16 right-12 text-3xl font-thin">
-        →
+        →  
       </div>
     </div>
   );

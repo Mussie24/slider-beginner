@@ -1,6 +1,7 @@
 import Image from "next/image";
-import { Slider } from "@/components/Slider";
+import { SliderM } from "@/components/SliderM";
 import { getSliderProps } from "@/lib/queries";
+
 
 
 export default async function Home() {
@@ -8,7 +9,8 @@ export default async function Home() {
   return (
     <div>
       
-      <Slider sliderPages={sliderPages} /> 
+      <SliderM sliderPages={sliderPages} /> 
+      
       
     </div>
   );
