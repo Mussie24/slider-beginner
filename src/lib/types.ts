@@ -75,6 +75,10 @@ export type SlideWP = {
   imageUrls?: string[];
 };
 
+
+
+
+// with Franzi
 export interface ImageProps {
   height: number
   width: number
@@ -91,5 +95,5 @@ export interface Slide {
 export interface SliderProps {
   headline: string | undefined;
   subline: string | undefined;
-  slides: Slide[] | undefined;
+   slides: Slide[] | undefined;
 }
